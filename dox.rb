@@ -5,12 +5,12 @@
 class Dox < Formula
   desc "Fetch library documentation files for AI agents and indexing tools"
   homepage "https://github.com/g5becks/dox"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
-    url "https://github.com/g5becks/dox/releases/download/v0.2.0/dox_Darwin_all.tar.gz"
-    sha256 "e10bc4fb4ee5d4f4c5c68e85e9fc8e67260403815aaf23e77571deea1e80e6a8"
+    url "https://github.com/g5becks/dox/releases/download/v0.3.0/dox_Darwin_all.tar.gz"
+    sha256 "6245748ae26a2931c72ed5c6fc43c1194766c60a3a0b08cfa5aabe9b9e7085ec"
 
     def install
       bin.install "dox"
@@ -19,15 +19,15 @@ class Dox < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/g5becks/dox/releases/download/v0.2.0/dox_Linux_x86_64.tar.gz"
-      sha256 "e3cb527ffcaa7ff4ff40440cf11d02984eee0fa488fc0593032a0b4dbf489c4a"
+      url "https://github.com/g5becks/dox/releases/download/v0.3.0/dox_Linux_x86_64.tar.gz"
+      sha256 "bbefe9c4c788f1ff0a4212623abe5d93fdd253fc2b17fd7e68360439b1dde8ab"
       def install
         bin.install "dox"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/g5becks/dox/releases/download/v0.2.0/dox_Linux_arm64.tar.gz"
-      sha256 "3f7e2391a5556a5da945bc7ad131ab6d04872ab30cbb707f1d811256bc71c4e3"
+      url "https://github.com/g5becks/dox/releases/download/v0.3.0/dox_Linux_arm64.tar.gz"
+      sha256 "bb12eb698d7f85b0aa0bf1355ff17524e326f1d448dcefd0d73e224cc0b39473"
       def install
         bin.install "dox"
       end
